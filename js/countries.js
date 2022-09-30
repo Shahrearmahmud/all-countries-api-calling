@@ -19,6 +19,8 @@ const getCountryHTML = country =>{
             ${country.name}
             </h2>
 
+            <p> Area: ${country.area}</p>
+
             <img src="${country.flags.png}">
 
     </div>
@@ -26,5 +28,39 @@ const getCountryHTML = country =>{
     `
 }
 
+
+
+
+//optional 1
+// const getCountryHTML = country =>{
+//     //option 1 
+//     const {name,flags} = country;
+//     return  `
+//     <div class="country">
+//             <h2>
+//             ${name}
+//             </h2>
+
+//             <img src="${flags.png}">
+
+//     </div>
+    
+//     `
+// }
+
+//optional 2
+// const getCountryHTML = ({name,flags}) =>{
+//     return  `
+//     <div class="country">
+//             <h2>
+//             ${name}
+//             </h2>
+
+//             <img src="${flags.png}">
+
+//     </div>
+    
+//     `
+// }
 
 loadCountries();
